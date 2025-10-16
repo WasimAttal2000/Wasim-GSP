@@ -1,0 +1,11 @@
+# Target labels
+ Aufgabe1-TaschenRechner.Debug+ITSboard
+# Source files and their labels
+C:/GSRepo/Wasim-Mohammad-GSP/Programs/Aufgabe1-TaschenRechner/tmp/CMakeFiles/Aufgabe1-TaschenRechner.Debug+ITSboard-build
+C:/GSRepo/Wasim-Mohammad-GSP/Programs/Aufgabe1-TaschenRechner/tmp/CMakeFiles/Aufgabe1-TaschenRechner.Debug+ITSboard-build.rule
+C:/GSRepo/Wasim-Mohammad-GSP/Programs/Aufgabe1-TaschenRechner/tmp/Aufgabe1-TaschenRechner.Debug+ITSboard/src/Aufgabe1-TaschenRechner.Debug+ITSboard-stamp/Aufgabe1-TaschenRechner.Debug+ITSboard-build.rule
+C:/GSRepo/Wasim-Mohammad-GSP/Programs/Aufgabe1-TaschenRechner/tmp/Aufgabe1-TaschenRechner.Debug+ITSboard/src/Aufgabe1-TaschenRechner.Debug+ITSboard-stamp/Aufgabe1-TaschenRechner.Debug+ITSboard-configure.rule
+C:/GSRepo/Wasim-Mohammad-GSP/Programs/Aufgabe1-TaschenRechner/tmp/Aufgabe1-TaschenRechner.Debug+ITSboard/src/Aufgabe1-TaschenRechner.Debug+ITSboard-stamp/Aufgabe1-TaschenRechner.Debug+ITSboard-patch.rule
+C:/GSRepo/Wasim-Mohammad-GSP/Programs/Aufgabe1-TaschenRechner/tmp/Aufgabe1-TaschenRechner.Debug+ITSboard/src/Aufgabe1-TaschenRechner.Debug+ITSboard-stamp/Aufgabe1-TaschenRechner.Debug+ITSboard-update.rule
+C:/GSRepo/Wasim-Mohammad-GSP/Programs/Aufgabe1-TaschenRechner/tmp/Aufgabe1-TaschenRechner.Debug+ITSboard/src/Aufgabe1-TaschenRechner.Debug+ITSboard-stamp/Aufgabe1-TaschenRechner.Debug+ITSboard-download.rule
+C:/GSRepo/Wasim-Mohammad-GSP/Programs/Aufgabe1-TaschenRechner/tmp/Aufgabe1-TaschenRechner.Debug+ITSboard/src/Aufgabe1-TaschenRechner.Debug+ITSboard-stamp/Aufgabe1-TaschenRechner.Debug+ITSboard-mkdir.rule
