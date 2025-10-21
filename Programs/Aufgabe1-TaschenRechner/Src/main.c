@@ -16,17 +16,26 @@
 #include "additionalFonts.h"
 #include "error.h"
 #include "display.h"
+#include "scanner.h"
+#include "superLoop.h"
 
+static int result = 0;
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
 	
 	GUI_init(DEFAULT_BRIGHTNESS);   // Initialisierung des LCD Boards mit Touch
-	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
-
-  // Begruessungstext	
-	//lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
+	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch	
 	initDisplay();
+	//Program loop
+	while (1) {
+		T_token token = nextToken();
+		char input = token.tok;
+		switchInput(input);
+		
+	
+	}
+
 	
 	// Test in Endlosschleife
 	while(1) {

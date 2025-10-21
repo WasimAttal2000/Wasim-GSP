@@ -23,7 +23,7 @@ int push(int zahl);
 /**
     popt die letzte zahl in der stack
 */
-int pop(void);
+int pop(int *value);
 
 /**
     popt alles in stack
@@ -39,7 +39,7 @@ int loeschen(void);
 /**
     vertauscht die position oberste zwei zahlen im stack
 */
-int drehen(void);
+int swap(void);
 
 /**
     kopiert oberste zahl im stack und tut sie im nächsten stack zelle

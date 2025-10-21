@@ -15,4 +15,69 @@
 
 
 
-  
+  /**
+    pusht einen Zahl in den Stack
+*/
+int push(int zahl)
+{
+
+}
+
+/**
+    popt die letzte zahl in der stack
+*/
+int pop(int *value)
+{
+
+}
+
+/**
+    popt alles in stack
+
+*/
+int popAlles(void)
+{
+
+}
+
+/**
+    löscht alles im stack
+*/
+int loeschen(void)
+{
+
+}
+
+/**
+    vertauscht die position oberste zwei zahlen im stack
+*/
+int swap(void)
+{
+
+}
+
+/**
+    kopiert oberste zahl im stack und tut sie im nächsten stack zelle
+*/
+int doppeln(void)
+{
+
+}
+
+/**
+    fragt ob stack leer ist
+*/
+bool isEmpty(void)
+{
+
+}
+
+
+/**
+   fragt ob stack voll ist
+*/
+bool isFull(void)
+{
+
+}
+

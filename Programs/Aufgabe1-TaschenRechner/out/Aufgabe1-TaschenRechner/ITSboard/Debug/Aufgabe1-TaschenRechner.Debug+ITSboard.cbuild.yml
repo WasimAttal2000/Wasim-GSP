@@ -335,6 +335,10 @@ build:
           category: header
         - file: ../../../../Inc/operation.h
           category: header
+        - file: ../../../../Inc/superLoop.h
+          category: header
+        - file: ../../../../Inc/error_handling.h
+          category: header
     - group: Program/User/Src
       files:
         - file: ../../../../Src/main.c
@@ -346,6 +350,10 @@ build:
         - file: ../../../../Src/stack.c
           category: sourceC
         - file: ../../../../Src/operation.c
+          category: sourceC
+        - file: ../../../../Src/superLoop.c
+          category: sourceC
+        - file: ../../../../Src/errorHandling.c
           category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h

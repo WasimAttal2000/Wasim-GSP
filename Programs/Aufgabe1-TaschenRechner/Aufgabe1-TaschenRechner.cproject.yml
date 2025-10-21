@@ -152,6 +152,8 @@ project:
         - file: Inc/token.h
         - file: Inc/stack.h
         - file: Inc/operation.h
+        - file: Inc/superLoop.h
+        - file: Inc/error_handling.h
     - group: Program/User/Src
       files:
         - file: Src/main.c
@@ -159,5 +161,7 @@ project:
         - file: Src/display.c
         - file: Src/stack.c
         - file: Src/operation.c
+        - file: Src/superLoop.c
+        - file: Src/errorHandling.c
   components:
     - component: ARM::CMSIS:CORE
