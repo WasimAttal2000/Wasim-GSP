@@ -15,6 +15,7 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
+#include "display.h"
 
 
 int main(void) {
@@ -24,7 +25,8 @@ int main(void) {
 	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
 
   // Begruessungstext	
-	lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
+	//lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
+	initDisplay();
 	
 	// Test in Endlosschleife
 	while(1) {
