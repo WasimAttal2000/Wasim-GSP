@@ -37,11 +37,11 @@ int switchInput(char input, int tokVal)
 			break;
 
 			case 'P':
-			result = popAlles();
+			
 			break;
 
 			case 'p':
-			result = pop();
+			
 			break;
 
 			case 'c':

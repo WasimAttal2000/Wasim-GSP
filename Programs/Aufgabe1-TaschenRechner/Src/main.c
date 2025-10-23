@@ -23,15 +23,12 @@
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
-	
-	GUI_init(DEFAULT_BRIGHTNESS);   // Initialisierung des LCD Boards mit Touch
-	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch	
 	initDisplay();
 	//Program loop
 	while (1) {
-		T_token token = nextToken();
-		char input = token.tok;
-		switchInput(input, token.val);
+		T_token token = nextToken(); // liest der nächten Token
+		char input = token.tok; // wir brauchen den tok von token
+		switchInput(input, token.val); // in superLoop.c geschrieben. Token Auswertung UND Fehrlern handlung.
 		
 	
 	}

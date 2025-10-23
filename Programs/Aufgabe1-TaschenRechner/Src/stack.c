@@ -8,21 +8,14 @@
 
   #include "stack.h"
   #include "error_handling.h"
+  #include "display.h"
   
 
-  // array mit 100 plätze
-  static int stack[MAX_SIZE_STACK];
-
-  // array zähler
-  static int currentStack = 0;
+  static int stack[MAX_SIZE_STACK];   // array mit 100 plätze
+  static int currentStack = 0;   // *Pointer*
+  static int laenge = sizeof(stack) / sizeof(stack[0]);
 
  
-
-
-
-  /**
-    pusht einen Zahl in den Stack
-*/
 int push(int zahl)
 {
     if(isFull())
@@ -44,11 +37,19 @@ int push(int zahl)
 /**
     popt die letzte zahl in der stack
 */
-int pop(int *value)
+int pop(int *val)
 {
     if(isEmpty())
     {
         return UNDERFLOW;
+
+    }else 
+    {
+        --currentStack;
+        *val = stack[currentStack];
+        return SUCCESS;
+
+        
     }
 
 }
@@ -59,6 +60,13 @@ int pop(int *value)
 */
 int popAlles(void)
 {
+    for(int i = 0; i< getCurrentStack(); i++)
+    {
+        char zeichen = '0' + stack[i];
+        printStdout();
+    }
+
+
 
 }
 
@@ -67,6 +75,9 @@ int popAlles(void)
 */
 int loeschen(void)
 {
+    currentStack = 0 ;
+    return SUCCESS;
+    
 
 }
 
@@ -91,6 +102,10 @@ int doppeln(void)
 */
 bool isEmpty(void)
 {
+    if (currentStack == 0)
+    {
+        return true;
+    }
 
 }
 
@@ -100,6 +115,14 @@ bool isEmpty(void)
 */
 bool isFull(void)
 {
+    
+    if(currentStack > 99 )
+    {
+        return true;
+    }
 
 }
-
+int getCurrentStack()
+{
+    return currentStack;
+}

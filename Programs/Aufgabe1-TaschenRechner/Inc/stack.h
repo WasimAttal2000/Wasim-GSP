@@ -24,7 +24,7 @@ int push(int zahl);
 /**
     popt die letzte zahl in der stack
 */
-int pop();
+int pop(int *val);
 
 /**
     popt alles in stack
@@ -57,6 +57,11 @@ bool isEmpty(void);
    fragt ob stack voll ist
 */
 bool isFull(void);
+
+/**
+   fragt wo steht der pointer
+*/
+int getCurrentStack();
 
 
 
