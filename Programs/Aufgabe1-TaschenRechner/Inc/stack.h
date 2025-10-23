@@ -15,6 +15,7 @@
 
 
 
+
 /**
     pusht einen Zahl in den Stack
 */
@@ -23,7 +24,7 @@ int push(int zahl);
 /**
     popt die letzte zahl in der stack
 */
-int pop(int *value);
+int pop();
 
 /**
     popt alles in stack

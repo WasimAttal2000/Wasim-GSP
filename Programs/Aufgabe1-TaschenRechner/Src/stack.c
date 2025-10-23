@@ -7,10 +7,15 @@
   */
 
   #include "stack.h"
+  #include "error_handling.h"
   
 
   // array mit 100 plätze
   static int stack[MAX_SIZE_STACK];
+
+  // array zähler
+  static int currentStack = 0;
+
  
 
 
@@ -20,6 +25,19 @@
 */
 int push(int zahl)
 {
+    if(isFull())
+    {
+        return OVERFLOW;
+        
+    }else 
+    {
+        stack[currentStack] = zahl;
+        currentStack++;
+        return SUCCESS;
+    
+    }
+
+    
 
 }
 
@@ -28,6 +46,10 @@ int push(int zahl)
 */
 int pop(int *value)
 {
+    if(isEmpty())
+    {
+        return UNDERFLOW;
+    }
 
 }
 

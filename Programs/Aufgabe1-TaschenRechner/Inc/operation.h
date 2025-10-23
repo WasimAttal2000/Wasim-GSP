@@ -13,22 +13,22 @@
 /**
     addiere zwei zahlen
 */
-int add(int zahl, int zahl2);
+int add();
 
 /**
     subtrahiere zwei zahlen
 */
-int sub(int zahl, int zahl2);
+int sub();
 
 /**
     multipliziere zwei zahlen
 */
-int mul(int zahl, int zahl2);
+int mul();
 
 /**
     dividiere zwei zahlen
 */
-int div(int zahl, int zahl2);
+int div();
 
 
 

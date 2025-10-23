@@ -6,50 +6,54 @@
   */
 
 #include "superLoop.h"
+#include "operation.h"
+#include "stack.h"
+#include "error_handling.h"
 
+static int result = 0;
 
-int switchInput(char input)
+int switchInput(char input, int tokVal)
 {
-    switch (input) {
-
-			case 'n':
-			//mul
+    switch (input) 
+	{
+		case 'n':
+			result = push(tokVal);
 			break;
 
 			case '+':
-			//addiere
+			result = add();
 			break;
 
 			case '-':
-			//subb
+			result = sub();
 			break;
 
 			case '/':
-			//div
+			result = div();
 			break;
 
 			case '*':
-			//mul
+			result = mul();
 			break;
 
 			case 'P':
-			//alles drücken
+			result = popAlles();
 			break;
 
 			case 'p':
-			//drück letzte
+			result = pop();
 			break;
 
 			case 'c':
-			//mul
+			result = loeschen();
 			break;
 
 			case 'r':
-			//mul
+			result = swap();
 			break;
 
 			case 'd':
-			//mul
+			result = doppeln();
 			break;
 
 			case ' ':
@@ -57,21 +61,24 @@ int switchInput(char input)
 			break;
 
 			case 'U':
-			//mul
+			result = UNDERFLOW;
 			break;
 
 			case 'O':
-			//mul
+			result = OVERFLOW;
 			break;
 
 
 
 			default:
-			// error
-
-
-		
-		}
+			result = UNEXPECTED_Error;
+					break;
+			
+	}
+	if(result != 0)
+			{
+				errorBehandlung(result);
+			}
 
 
 }

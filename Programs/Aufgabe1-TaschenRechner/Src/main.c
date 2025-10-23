@@ -19,7 +19,7 @@
 #include "scanner.h"
 #include "superLoop.h"
 
-static int result = 0;
+
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
@@ -31,7 +31,7 @@ int main(void) {
 	while (1) {
 		T_token token = nextToken();
 		char input = token.tok;
-		switchInput(input);
+		switchInput(input, token.val);
 		
 	
 	}

@@ -6,3 +6,10 @@
   */
 
   #include "error_handling.h"
+
+
+
+  void errorBehandlung(int errorTyp)
+  {
+    // switch cases!!
+  }

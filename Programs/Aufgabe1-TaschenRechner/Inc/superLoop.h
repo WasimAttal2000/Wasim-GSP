@@ -9,7 +9,7 @@
 #ifndef SUPERLOOP_H
 #define SUPERLOOP_H
 
-int switchInput(char input);
+int switchInput(char input, int tokVal);
 
 
 

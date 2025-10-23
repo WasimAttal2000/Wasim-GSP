@@ -11,7 +11,7 @@
 /**
     addiere zwei zahlen
 */
-int add(int zahl, int zahl2)
+int add()
 {
 
 }
@@ -19,7 +19,7 @@ int add(int zahl, int zahl2)
 /**
     subtrahiere zwei zahlen
 */
-int sub(int zahl, int zahl2)
+int sub()
 {
 
 }
@@ -27,7 +27,7 @@ int sub(int zahl, int zahl2)
 /**
     multipliziere zwei zahlen
 */
-int mul(int zahl, int zahl2)
+int mul()
 {
 
 }
@@ -35,7 +35,7 @@ int mul(int zahl, int zahl2)
 /**
     dividiere zwei zahlen
 */
-int div(int zahl, int zahl2)
+int div()
 {
 
 }
