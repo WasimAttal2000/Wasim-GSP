@@ -11,7 +11,11 @@
 #define SUCCESS 0
 #define OVERFLOW -3
 #define UNDERFLOW -4
+#define DIVISION_WITH_0	-5
+#define NOT_ENOUGH_OPERANDS	-6
+#define OUT_OF_RANGE -7
 #define UNEXPECTED_Error -9
+
 
 
 

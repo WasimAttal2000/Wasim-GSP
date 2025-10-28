@@ -2,7 +2,7 @@
   * @file   stack.c
   * @author Mohammad Wasim Attal, HAW Hamburg 
   * @date   Oktober.21
-  * @brief  This modules implements a simple Stack with array of 10 
+  * @brief  This modules implements a simple Stack with array of 100
             and we have several function to manipulate the Stack
   */
 
@@ -13,8 +13,7 @@
 
   static int stack[MAX_SIZE_STACK];   // array mit 100 plätze
   static int currentStack = 0;   // *Pointer*
-  static int laenge = sizeof(stack) / sizeof(stack[0]);
-
+  
  
 int push(int zahl)
 {
@@ -58,28 +57,19 @@ int pop(int *val)
     popt alles in stack
 
 */
-int popAlles(void)
+int printTop(void)
 {
-    for(int i = 0; i< getCurrentStack(); i++)
-    {
-        char zeichen = '0' + stack[i];
-        printStdout();
-    }
-
 
 
 }
 
-/**
-    löscht alles im stack
-*/
-int loeschen(void)
+int printAll(void)
 {
-    currentStack = 0 ;
-    return SUCCESS;
-    
+
 
 }
+
+
 
 /**
     vertauscht die position oberste zwei zahlen im stack
@@ -98,15 +88,20 @@ int doppeln(void)
 }
 
 /**
+    löscht alles im stack
+*/
+int deleteAll(void)
+{
+    currentStack = 0 ;
+    return SUCCESS;
+}
+
+/**
     fragt ob stack leer ist
 */
 bool isEmpty(void)
 {
-    if (currentStack == 0)
-    {
-        return true;
-    }
-
+   return currentStack == 0;
 }
 
 
@@ -115,14 +110,13 @@ bool isEmpty(void)
 */
 bool isFull(void)
 {
-    
-    if(currentStack > 99 )
-    {
-        return true;
-    }
-
+    return currentStack == MAX_SIZE_STACK;
 }
-int getCurrentStack()
+
+/**
+   gibt zurück wo der Pointer gerade steht.
+*/
+int getCurrentStack(void)
 {
     return currentStack;
 }

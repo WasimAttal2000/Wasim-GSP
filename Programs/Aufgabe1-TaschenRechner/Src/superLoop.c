@@ -36,16 +36,17 @@ int switchInput(char input, int tokVal)
 			result = mul();
 			break;
 
-			case 'P':
+			case 'p':   // klein
+
 			
 			break;
 
-			case 'p':
+			case 'P':  // groß
 			
 			break;
 
 			case 'c':
-			result = loeschen();
+			result = deleteAll();
 			break;
 
 			case 'r':
@@ -56,8 +57,8 @@ int switchInput(char input, int tokVal)
 			result = doppeln();
 			break;
 
-			case ' ':
-			//mul
+			case ' ':   // ?????
+			
 			break;
 
 			case 'U':
@@ -75,7 +76,7 @@ int switchInput(char input, int tokVal)
 					break;
 			
 	}
-	if(result != 0)
+	if(result < 0)
 			{
 				errorBehandlung(result);
 			}

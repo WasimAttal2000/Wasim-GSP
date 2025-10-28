@@ -2,7 +2,7 @@
   * @file   stack.c
   * @author Mohammad Wasim Attal, HAW Hamburg 
   * @date   Oktober.21
-  * @brief  This modules implements a simple Stack with array of 10 
+  * @brief  This modules implements a simple Stack with array of 100 
             and we have several function to manipulate the Stack
   */
 
@@ -27,15 +27,21 @@ int push(int zahl);
 int pop(int *val);
 
 /**
-    popt alles in stack
+    drückt aus oberste Stack 
 
 */
-int popAlles(void);
+int printTop(void);
+
+/**
+    drückt alles im Stack 
+
+*/
+int printAll(void);
 
 /**
     löscht alles im stack
 */
-int loeschen(void);
+int deleteAll(void);
 
 /**
     vertauscht die position oberste zwei zahlen im stack
@@ -59,7 +65,7 @@ bool isEmpty(void);
 bool isFull(void);
 
 /**
-   fragt wo steht der pointer
+   gibt zurück wo der Pointer gerade steht.
 */
 int getCurrentStack();
 
