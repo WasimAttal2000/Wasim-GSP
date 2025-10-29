@@ -6,13 +6,13 @@
             and we have several function to manipulate the Stack
   */
 
-  #include "stack.h"
-  #include "error_handling.h"
-  #include "display.h"
+#include "stack.h"
+#include "error_handling.h"
+#include "display.h"
   
 
-  static int stack[MAX_SIZE_STACK];   // array mit 100 plätze
-  static int currentStack = 0;   // *Pointer*
+static int stack[MAX_SIZE_STACK];   // array mit 100 plätze
+static int currentStack = 0;   // *Pointer*
   
  
 int push(int zahl)

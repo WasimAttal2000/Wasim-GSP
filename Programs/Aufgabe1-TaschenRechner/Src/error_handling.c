@@ -5,12 +5,11 @@
   * @brief  This modules implements a simple error handling strategies
   */
 
-  #include "error_handling.h"
+#include "error_handling.h"
 #include "display.h"
 
 
-
-  void errorBehandlung(int errorTyp)
+void errorBehandlung(int errorTyp)
   {
     char *errorMsg;
     switch (errorTyp) {
@@ -37,3 +36,5 @@
     }
     printStdout(errorMsg);
   }
+
+

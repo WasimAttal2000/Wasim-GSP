@@ -18,11 +18,6 @@
 #define UNEXPECTED_ERROR -9
 
 
-
-
-
-
-
 void errorBehandlung(int errorTyp);
 
 

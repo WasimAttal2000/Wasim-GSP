@@ -20,67 +20,63 @@ int switchInput(char input, int tokVal)
 			result = push(tokVal);
 			break;
 
-			case '+':
+		case '+':
 			result = add();
 			break;
 
-			case '-':
+		case '-':
 			result = sub();
 			break;
 
-			case '/':
+		case '/':
 			result = div();
 			break;
 
-			case '*':
+		case '*':
 			result = mul();
 			break;
 
-			case 'p':   // klein
+		case 'p':   // klein
 			result = printTop();
 			break;
 
-			case 'P':  // groß
+		case 'P':  // groß
 			result = printAll();
 			break;
 
-			case 'c':
+		case 'c':
 			result = deleteAll();
 			break;
 
-			case 'r':
+		case 'r':
 			result = swap();
 			break;
 
-			case 'd':
+		case 'd':
 			result = doppeln();
 			break;
 
-			case ' ': // ?????
+		case ' ': // ?????
 			
 			break;
 
-			case 'U':
+		case 'U':
 			result = UNEXPECTED_TOKEN;
-			
 			break;
 
-			case 'O':
+		case 'O':
 			result = OVERFLOW;
-			
 			break;
 
-
-
-			default:
+		default:
 			result = UNEXPECTED_ERROR;
 					break;
 			
 	}
 	if(result < 0)
-			{
-				errorBehandlung(result);
-			}
+	{
+		errorBehandlung(result);
+	}
 
 
 }
