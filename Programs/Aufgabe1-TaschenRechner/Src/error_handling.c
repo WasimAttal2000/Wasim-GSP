@@ -1,0 +1,39 @@
+/**
+  * @file   error_handling.c
+  * @author Mohammad Wasim Attal, HAW Hamburg 
+  * @date   Oktober.21
+  * @brief  This modules implements a simple error handling strategies
+  */
+
+  #include "error_handling.h"
+#include "display.h"
+
+
+
+  void errorBehandlung(int errorTyp)
+  {
+    char *errorMsg;
+    switch (errorTyp) {
+      case DIVISION_WITH_0:
+        errorMsg = "Division durch Null unmöglich!";
+        break;
+      case UNDERFLOW:
+        errorMsg = "Stack ist Leer !";
+        break;
+      case OVERFLOW:
+        errorMsg = "Stack ist voll !";
+        break;
+      case NOT_ENOUGH_OPERANDS:
+        errorMsg = "nicht reichende operenden!";
+        break;
+      case OUT_OF_RANGE:
+        errorMsg = "MIN / MAX limits überschritten!";
+        break;
+      case UNEXPECTED_TOKEN:
+        errorMsg = "unbekannte Eingabe!";
+        break;
+      default:
+        errorMsg = "Fehler konnte nicht festgestellt werden!";
+    }
+    printStdout(errorMsg);
+  }

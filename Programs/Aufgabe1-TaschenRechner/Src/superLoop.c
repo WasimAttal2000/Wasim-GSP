@@ -37,12 +37,11 @@ int switchInput(char input, int tokVal)
 			break;
 
 			case 'p':   // klein
-
-			
+			result = printTop();
 			break;
 
 			case 'P':  // groß
-			
+			result = printAll();
 			break;
 
 			case 'c':
@@ -57,22 +56,24 @@ int switchInput(char input, int tokVal)
 			result = doppeln();
 			break;
 
-			case ' ':   // ?????
+			case ' ': // ?????
 			
 			break;
 
 			case 'U':
-			result = UNDERFLOW;
+			result = UNEXPECTED_TOKEN;
+			
 			break;
 
 			case 'O':
 			result = OVERFLOW;
+			
 			break;
 
 
 
 			default:
-			result = UNEXPECTED_Error;
+			result = UNEXPECTED_ERROR;
 					break;
 			
 	}

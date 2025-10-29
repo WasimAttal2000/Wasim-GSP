@@ -14,7 +14,9 @@
 #define DIVISION_WITH_0	-5
 #define NOT_ENOUGH_OPERANDS	-6
 #define OUT_OF_RANGE -7
-#define UNEXPECTED_Error -9
+#define UNEXPECTED_TOKEN -8
+#define UNEXPECTED_ERROR -9
+
 
 
 

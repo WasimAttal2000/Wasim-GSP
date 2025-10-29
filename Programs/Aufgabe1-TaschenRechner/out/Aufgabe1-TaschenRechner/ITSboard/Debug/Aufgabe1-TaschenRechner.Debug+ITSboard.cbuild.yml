@@ -353,8 +353,12 @@ build:
           category: sourceC
         - file: ../../../../Src/superLoop.c
           category: sourceC
-        - file: ../../../../Src/errorHandling.c
+        - file: ../../../../Src/error_handling.c
           category: sourceC
+    - group: Unterlagen_GSP
+      files:
+        - file: ../../../../Unterlagen_Module_Konzept/Unterlagen_GSP_Aufgabe1_V1.pdf
+          category: doc
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h
       category: header

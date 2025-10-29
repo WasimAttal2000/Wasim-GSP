@@ -26,16 +26,10 @@ int push(int zahl)
         stack[currentStack] = zahl;
         currentStack++;
         return SUCCESS;
-    
     }
-
-    
-
 }
 
-/**
-    popt die letzte zahl in der stack
-*/
+
 int pop(int *val)
 {
     if(isEmpty())
@@ -46,77 +40,95 @@ int pop(int *val)
     {
         --currentStack;
         *val = stack[currentStack];
-        return SUCCESS;
-
-        
+        return SUCCESS; 
     }
-
 }
 
-/**
-    popt alles in stack
 
-*/
 int printTop(void)
 {
+    if (isEmpty()) {
+    return UNDERFLOW;
+    }
 
 
 }
+
 
 int printAll(void)
 {
+    if (isEmpty()) {
+        return UNDERFLOW;
+    
+    }
 
 
 }
 
 
-
-/**
-    vertauscht die position oberste zwei zahlen im stack
-*/
 int swap(void)
 {
-
+    if (currentStack< 2) {
+        return NOT_ENOUGH_OPERANDS;
+    }else {
+        int z1 = 0;
+        int z2 = 0;
+        pop(&z1);
+        pop(&z2);
+        push(z1);
+        push(z2);
+        return SUCCESS;
+    }
 }
 
-/**
-    kopiert oberste zahl im stack und tut sie im nächsten stack zelle
-*/
+
 int doppeln(void)
 {
-
+    if(isEmpty())
+    {
+        return UNDERFLOW;
+    }else {
+    int value = 0;
+    peek(&value, getCurrentStack()-1);
+    push(value);
+    return SUCCESS;
+    }
 }
 
-/**
-    löscht alles im stack
-*/
+
 int deleteAll(void)
 {
     currentStack = 0 ;
     return SUCCESS;
 }
 
-/**
-    fragt ob stack leer ist
-*/
+
 bool isEmpty(void)
 {
    return currentStack == 0;
 }
 
 
-/**
-   fragt ob stack voll ist
-*/
 bool isFull(void)
 {
     return currentStack == MAX_SIZE_STACK;
 }
 
-/**
-   gibt zurück wo der Pointer gerade steht.
-*/
+
 int getCurrentStack(void)
 {
     return currentStack;
+}
+
+
+int peek(int *val, int index)
+{
+    if(isEmpty())
+    {
+        return UNDERFLOW;
+    }
+    if (index < currentStack) {
+        *val = stack[index];
+        return SUCCESS;
+    } 
 }

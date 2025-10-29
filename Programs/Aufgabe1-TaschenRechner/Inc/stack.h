@@ -69,6 +69,11 @@ bool isFull(void);
 */
 int getCurrentStack();
 
+/**
+   gibt der oberster Wert ohne den zu verändern!
+*/
+int peek(int *val, int index);
+
 
 
 #endif /* STACK_H */

@@ -162,6 +162,9 @@ project:
         - file: Src/stack.c
         - file: Src/operation.c
         - file: Src/superLoop.c
-        - file: Src/errorHandling.c
+        - file: Src/error_handling.c
+    - group: Unterlagen_GSP
+      files:
+        - file: Unterlagen_Module_Konzept/Unterlagen_GSP_Aufgabe1_V1.pdf
   components:
     - component: ARM::CMSIS:CORE
