@@ -14,7 +14,7 @@ void errorBehandlung(int errorTyp)
     char *errorMsg;
     switch (errorTyp) {
       case DIVISION_WITH_0:
-        errorMsg = "Division durch Null unmöglich!";
+        errorMsg = "Division durch Null\nunmoeglich!";
         break;
       case UNDERFLOW:
         errorMsg = "Stack ist Leer !";
@@ -26,14 +26,15 @@ void errorBehandlung(int errorTyp)
         errorMsg = "nicht reichende operenden!";
         break;
       case OUT_OF_RANGE:
-        errorMsg = "MIN / MAX limits überschritten!";
+        errorMsg = "MIN / MAX limits ueberschritten!";
         break;
       case UNEXPECTED_TOKEN:
         errorMsg = "unbekannte Eingabe!";
         break;
       default:
-        errorMsg = "Fehler konnte nicht festgestellt werden!";
+        errorMsg = "Fehler konnte nicht\nfestgestellt werden!";
     }
+    setErrMode();
     printStdout(errorMsg);
   }
 

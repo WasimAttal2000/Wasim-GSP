@@ -9,6 +9,7 @@
 #include "operation.h"
 #include "stack.h"
 #include "error_handling.h"
+#include "display.h"
 
 static int result = 0;
 
@@ -44,8 +45,9 @@ int switchInput(char input, int tokVal)
 			result = printAll();
 			break;
 
-		case 'c':
+		case 'C':
 			result = deleteAll();
+			clearStdout();
 			break;
 
 		case 'r':
@@ -54,10 +56,6 @@ int switchInput(char input, int tokVal)
 
 		case 'd':
 			result = doppeln();
-			break;
-
-		case ' ': // ?????
-			
 			break;
 
 		case 'U':

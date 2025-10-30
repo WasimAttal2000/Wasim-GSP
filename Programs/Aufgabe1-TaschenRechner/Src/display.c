@@ -66,4 +66,10 @@ bool isBottomLine(void) {
 	 return getCurRow(&stdoutTerm) + 1 == getNoOfRows(&stdoutTerm);
 }
 
+int printNr(int zahlZuPrinten)
+{
+   
+
+}
+
 // EOF
