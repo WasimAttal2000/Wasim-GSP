@@ -50,18 +50,14 @@ int printTop(void)
     if (isEmpty()) 
     {
         return UNDERFLOW;
-
-    }else 
+    }
+    else
     {
         int stackTop = 0;
         peek(& stackTop, getCurrentStack() - 1);
         printNr(stackTop);
         return SUCCESS;
-    
-
     }
-
-
 }
 
 
@@ -69,20 +65,15 @@ int printAll(void)
 {
     if (isEmpty()) {
         return UNDERFLOW;
-    
-    }else {
-        for (int i = 0; i < getCurrentStack(); i++) {
-            int value2 = 0;
-            peek(&value2, getCurrentStack() - i);
-            printNr(value2);
-            return SUCCESS;
-            
-        
-        }
-    
     }
 
+    for (int i = 0, x = 1; i < getCurrentStack(); i++, x++) {
+        int value2 = 0;
+        peek(&value2, getCurrentStack() - x);
+        printNr(value2);
+    }
 
+    return SUCCESS;
 }
 
 
@@ -150,5 +141,7 @@ int peek(int *val, int index)
     if (index < currentStack) {
         *val = stack[index];
         return SUCCESS;
-    } 
+    }
+
+    return OVERFLOW;
 }

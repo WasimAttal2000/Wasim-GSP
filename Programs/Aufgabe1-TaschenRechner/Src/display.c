@@ -66,10 +66,38 @@ bool isBottomLine(void) {
 	 return getCurRow(&stdoutTerm) + 1 == getNoOfRows(&stdoutTerm);
 }
 
-int printNr(int zahlZuPrinten)
+void printNr(int zahlZuPrinten)
 {
-   
+   char zahlAsString[16];
+   int i = 15;
 
+   zahlAsString[i] = '\0';
+   i--;
+   zahlAsString[i]  = '\n';
+   i--;
+
+   int zahl = zahlZuPrinten;
+   do {
+      int ziffer = zahl % 10;
+      if(ziffer < 0) {
+         ziffer = -ziffer;
+      }
+
+      zahlAsString[i] = ziffer + '0';
+      i--;
+      
+      zahl /= 10;
+   } while(zahl != 0);
+
+   if(zahlZuPrinten < 0)
+   {
+      zahlAsString[i] = '-';
+      i--;
+   }
+
+   // Richtige position im string anfangen zu printen
+   // bsp: zahlAsString = [____________1234]
+   printStdout(zahlAsString + i + 1);
 }
 
 // EOF

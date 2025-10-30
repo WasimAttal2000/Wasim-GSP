@@ -26,7 +26,7 @@ void errorBehandlung(int errorTyp)
         errorMsg = "nicht reichende operenden!";
         break;
       case OUT_OF_RANGE:
-        errorMsg = "MIN / MAX limits ueberschritten!";
+        errorMsg = "MIN / MAX limits\nueberschritten!";
         break;
       case UNEXPECTED_TOKEN:
         errorMsg = "unbekannte Eingabe!";

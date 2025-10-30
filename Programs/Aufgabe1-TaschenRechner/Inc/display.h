@@ -81,7 +81,7 @@ extern bool isBottomLine(void);
 /*
  printet die zahl an display
 */
-int printNr(int zahlZuPrinten);
+void printNr(int zahlZuPrinten);
 
 #endif /* OUTPUT_H */
 // EOF
