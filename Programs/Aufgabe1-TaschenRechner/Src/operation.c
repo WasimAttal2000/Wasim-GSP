@@ -73,7 +73,7 @@ int sub()
         return OUT_OF_RANGE;
     
     }else {
-        push(r1 - r2 );
+        push(r2 - r1 );
         return SUCCESS;
     
     }
