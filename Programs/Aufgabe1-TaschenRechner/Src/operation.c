@@ -34,7 +34,7 @@ int add()
 
     }
 
-    if(r1 > INT_MAX - r2 || r1 < INT_MIN + r2)
+    if(r1 > INT_MAX - r2 || r1 < INT_MIN - r2)
     {
         return OUT_OF_RANGE;
 
@@ -69,7 +69,7 @@ int sub()
         return r;
     }
 
-    if (r1 > 0 && r2 > INT_MAX - r1 || r1 < 0 && r2 < INT_MIN + r1 ) {
+    if (r1 > 0 && r2 > INT_MAX + r1 || r1 < 0 && r2 < INT_MIN + r1 ) {
         return OUT_OF_RANGE;
     
     }else {
@@ -101,6 +101,17 @@ int mul()
     {
         return r;
 
+    }
+
+    if (r1 == 0 || r2 == 0) 
+    {   push(0);
+        return SUCCESS;
+    }
+
+    if (r2 < 0)
+    {   if(r1 < INT_MAX / r2 || r1 > INT_MIN / r2  )
+    {
+        return OUT_OF_RANGE; }
     }
 
     if(r1 > INT_MAX / r2 || r1 < INT_MIN / r2  )
